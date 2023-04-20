@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
+
+
+.container
+{
+    height: 450px;
+  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('F:\react projects\quoteGen\quotes\src\images\bg.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.quotesy
+{
+    margin-top: 30px;
+    background: whitesmoke;
+    width: 40%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 25px;
+    padding: 2%;
+    padding-top: 50px;
+    box-shadow: 10px 10px;
+}
+
+.hi
+{
+    padding-top: 20px;
+    font-size: large;
+    display: flex;
+  align-items: center;
+  height: 60px;
+  font-family: 'Quintessential', cursive;
+
+}
+
+.iam
+{
+    margin-top: 50px;
+    justify-content: right;
+  height: 40px;
+  font-size:large;
+  font-family: 'Tangerine', cursive;
+}
+
+.button {
+    margin-top: 40px;
+    position: relative;
+    outline: none;
+    text-decoration: none;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    height: 50px;
+    width: 200px;
+    color: black;
+    opacity: 1;
+    background-color: #ffffff;
+    border: 2px solid black;
+    font-family: 'Creepster', cursive;
+    font-size: large;
+  }
+    
+  .button span {
+    color: #164ca7;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.7px;
+  }
+    
+  .button:hover {
+    animation: rotate 0.7s ease-in-out both;
+  }
+    
+  .button:hover span {
+    animation: storm 0.7s ease-in-out both;
+    animation-delay: 0.06s;
+  }
+    

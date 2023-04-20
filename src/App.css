@@ -1,38 +1,187 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap');
+/* Global styles */
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  height: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Header styles */
+header { 
+  background-color: #333;
+  color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+} 
+.div1
+{
+  background-color: #111;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .5rem;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+
+nav {
+  display: flex;
+  margin-top: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
   color: white;
+  text-decoration: none;
 }
 
-.App-link {
-  color: #61dafb;
+nav a:hover {
+  color: #e58282;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0.5rem;
+    border-radius: 5px;
+    transition: background-color 0.2s ease-in-out;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+/* h1:hover {
+  color: #e58282;
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 0.5rem;
+    border-radius: 5px;
+    transition: background-color 0.2s ease-in-out;
+} */
+
+.home,
+.about,
+.con,.anc{
+  margin: 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 50%;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  text-decoration: none;
+  font-family: 'Rubik Wet Paint', cursive;
+}
+
+.home:hover,
+.about:hover,
+.con:hover,
+.anc:hover
+{
+  background-color: #111;
+  color: white;
+    font-size: 1.2rem;
+    padding: 20px;
+    border-radius: 50%;
+}
+/* Main content styles */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 200px);
+  background: linear-gradient(rgba(240, 233, 240, 0.2), rgb(192,72,72,0.8));
+  background-size:100%;
+  background-position: 0.1px;
+  background-repeat: no-repeat;
+}
+
+.quote {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #333;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: auto;
+}
+
+footer p {
+  margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  /* Header styles for small screens */
+  header {
+    padding: 10px;
   }
-  to {
-    transform: rotate(360deg);
+
+  h1 {
+    font-size: 24px;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav li {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  /* Main content styles for small screens */
+  .container {
+    min-height: calc(100vh - 150px);
+    padding: 10px;
+  }
+
+  .quote {
+    font-size: 20px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+
+  /* Footer styles for small screens */
+  footer {
+    font-size: 14px;
+    padding: 50px;
   }
 }

@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+header {
+    background-color: #111;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    padding-top: 40px;
+    margin: 0;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    font-family: 'Tilt Prism', cursive;
+  }
+  
+  
+  nav {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  nav li {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0;
+    border-radius: 5px;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  nav a:hover {
+    background-color: #444;
+  }
+  
