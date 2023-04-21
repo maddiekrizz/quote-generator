@@ -16,7 +16,7 @@ function App() {
       <Link className='home' to='/home'>Home</Link>
       <Link className='about' to='/about'>About</Link>
       <Link className='con' to='/contact'>Contact</Link>
-      <a  className='anc' href='#c'>Footer</a>
+      <a  className='anc' href='#c'>Info</a>
       </div>
 
       <Routes>
